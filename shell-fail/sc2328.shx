@@ -1,0 +1,1 @@
+var=$(tr -d ':' < input.txt > output.txt)

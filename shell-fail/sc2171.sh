@@ -1,0 +1,1 @@
+if foo -eq bar ]; then true; fi

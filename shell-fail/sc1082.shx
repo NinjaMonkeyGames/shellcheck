@@ -1,0 +1,3 @@
+$ cat -v file
+M-oM-;M-?#!/bin/bash
+echo "hello world"

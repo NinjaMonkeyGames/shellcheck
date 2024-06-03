@@ -1,0 +1,1 @@
+grep foo file.txt | sed -e 's/foo/bar/g' > file.txt

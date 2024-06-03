@@ -1,0 +1,1 @@
+find . -name '*.ppm' -exec pnmtopng {} > {}.png \;

@@ -1,0 +1,1 @@
+echo "You enter "$HOSTNAME". You can smell the wumpus." >> /etc/issue

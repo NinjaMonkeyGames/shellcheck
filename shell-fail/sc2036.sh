@@ -1,0 +1,1 @@
+sum=find | wc -l

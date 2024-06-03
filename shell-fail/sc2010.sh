@@ -1,0 +1,1 @@
+ls /directory | grep mystring

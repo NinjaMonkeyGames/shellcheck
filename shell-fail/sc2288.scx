@@ -1,0 +1,3 @@
+var=$("wget 'http://www.shellcheck.net/'")
+echo Usage: $0 {start|stop|restart}
+array=val1, val2, val3

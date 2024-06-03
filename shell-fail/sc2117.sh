@@ -1,0 +1,3 @@
+whoami
+su
+whoami

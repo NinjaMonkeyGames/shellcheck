@@ -1,0 +1,1 @@
+value=$(( ((offset + index)) * 512 )) 

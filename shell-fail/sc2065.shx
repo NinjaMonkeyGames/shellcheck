@@ -1,0 +1,1 @@
+[ 1 >2 ] || [ 3>'aaa bb' ] # Simple example of problematic code

@@ -1,0 +1,1 @@
+alias archive='mv "$@" /backup'

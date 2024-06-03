@@ -1,0 +1,1 @@
+string="stirng" ; echo "$string" | sed -e "s/ir/ri/"

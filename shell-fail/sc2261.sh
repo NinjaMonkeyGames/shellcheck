@@ -1,0 +1,1 @@
+grep foo < input1 < input2 > output1 > output2 > output3

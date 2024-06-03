@@ -1,0 +1,1 @@
+[[ $dryrun ]] && echo "Would delete file" || rm file

@@ -1,0 +1,2 @@
+MYVAR=foo
+export $MYVAR

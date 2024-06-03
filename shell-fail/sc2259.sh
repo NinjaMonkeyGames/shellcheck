@@ -1,0 +1,1 @@
+gzcat yesterday.log.gz | grep "$USER" < today.log

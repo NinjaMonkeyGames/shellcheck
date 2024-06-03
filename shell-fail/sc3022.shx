@@ -1,0 +1,2 @@
+exec {n}> "$output"
+echo "Your fd is $n"

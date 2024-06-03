@@ -1,0 +1,1 @@
+find . -name '*.avi' -o -name '*.mkv' -exec cp {} /media \;

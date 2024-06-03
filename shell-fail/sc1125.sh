@@ -1,0 +1,1 @@
+# shellcheck disable=SC2153 (variable not a misspelling)

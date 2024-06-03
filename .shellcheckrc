@@ -1,0 +1,4 @@
+# Disable specific ShellCheck rules
+
+#enable=SC0000,SC0001
+#disable=SC0002,SC0003

@@ -1,0 +1,3 @@
+# Regular array
+index=42
+echo $((array[$index]))

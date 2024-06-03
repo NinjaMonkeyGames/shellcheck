@@ -1,0 +1,1 @@
+trap 'handle_interrupt' SIGINT

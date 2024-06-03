@@ -1,0 +1,1 @@
+exit "Bad filename"

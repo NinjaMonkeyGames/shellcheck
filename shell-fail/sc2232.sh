@@ -1,0 +1,2 @@
+sudo cd /root
+pwd

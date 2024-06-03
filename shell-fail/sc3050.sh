@@ -1,0 +1,1 @@
+ssh host "cat $(printf "%q" "$remotefile")"

@@ -1,0 +1,4 @@
+if [ "$(mycommand --myflags)" ]
+then
+  echo "True"
+fi

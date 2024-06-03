@@ -1,0 +1,1 @@
+echo "$RANDOM"   # Does this work?

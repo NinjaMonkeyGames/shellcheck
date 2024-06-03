@@ -1,0 +1,1 @@
+var=grep -c pattern file

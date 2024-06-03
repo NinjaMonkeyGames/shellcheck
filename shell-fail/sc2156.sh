@@ -1,0 +1,1 @@
+find . -name '*.mp3' -exec sh -c 'i="{}"; sox "$i" "${i%.mp3}.wav"' \;

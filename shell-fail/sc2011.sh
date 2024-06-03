@@ -1,0 +1,1 @@
+ls | xargs -n1 wc -w

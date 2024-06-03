@@ -1,0 +1,4 @@
+myfunc() {
+  local i=0
+  ..
+}

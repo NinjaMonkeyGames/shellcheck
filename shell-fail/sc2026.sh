@@ -1,0 +1,1 @@
+alias server_uptime='ssh $host 'uptime -p''

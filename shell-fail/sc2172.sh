@@ -1,0 +1,1 @@
+trap myfunc 28

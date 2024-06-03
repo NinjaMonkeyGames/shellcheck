@@ -1,0 +1,1 @@
+ps ax | grep -v grep | grep "$service" > /dev/null

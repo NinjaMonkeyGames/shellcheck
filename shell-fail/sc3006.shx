@@ -1,0 +1,4 @@
+variable=1
+if ((variable)); then
+  echo variable is not zero
+fi

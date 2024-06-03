@@ -1,0 +1,2 @@
+# Open FD #10 for writing
+exec 10> file

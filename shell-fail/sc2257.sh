@@ -1,0 +1,1 @@
+curl "$URL" > "image$((i++)).jpg"

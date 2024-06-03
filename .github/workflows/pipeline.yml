@@ -1,0 +1,22 @@
+name: ShellCheck Lint                                           # Define the name of the workflow
+
+on: [push, pull_request]                                        # Trigger the workflow on push and pull request events
+
+jobs:                                                           # Initialise jobs
+  lint:                                                         # Define a job named 'lint'
+    runs-on: ubuntu-latest                                      # Specify the type of virtual machine to use (Ubuntu latest version)
+
+    container:                                                  # Initialise container
+      image: monkeyknuckles/shellcheck                          # Use a Docker container with the html-validate image
+
+    steps:                                                      # List of steps to execute in the job
+      - name: Checkout code                                     # Step name: Checkout code from the repository
+        uses: actions/checkout@v3                               # Use the checkout action to clone the repository
+
+      - name: Copy ShellCheck config                            # Step name: Copy markdownlint configuration file
+        run: cp /app/.shellcheckrc $GITHUB_WORKSPACE            # Copy the .shellcheckrc file from the container to the workspace
+
+      - name: Run ShellCheck                                    # Step name: Run ShellCheck
+        run: find . -name "*.sh" -exec shellcheck --color {} +  # Execute the shellcheck command on all shell script files in the repository
+             
+      

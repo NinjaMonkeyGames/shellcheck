@@ -1,0 +1,5 @@
+#!/bin/busybox sh
+if [[ $1 == https:* ]]
+then
+  echo "Using URL $1"
+fi

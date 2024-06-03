@@ -1,0 +1,1 @@
+echo "<img src="foo.png" />" > file.html

@@ -1,0 +1,1 @@
+[[ -e ~/.bashrc && \( -x /bin/dash || -x /bin/ash \) ]]

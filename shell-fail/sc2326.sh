@@ -1,0 +1,1 @@
+cat | ! tee /dev/full

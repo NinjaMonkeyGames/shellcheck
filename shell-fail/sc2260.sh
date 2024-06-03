@@ -1,0 +1,1 @@
+env > environment.txt | grep '^ANDROID'

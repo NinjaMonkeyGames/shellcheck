@@ -1,0 +1,1 @@
+[ "$input" =~ DOC[0-9]*\.txt ] && echo "match"

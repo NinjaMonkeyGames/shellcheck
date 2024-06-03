@@ -1,0 +1,1 @@
+printf "Hello %s, welcome to %s.\n" "$USER"

@@ -1,0 +1,1 @@
+echo foo > /dev/tcp/myhost/1234

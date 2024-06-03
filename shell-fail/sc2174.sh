@@ -1,0 +1,1 @@
+mkdir -p -m 0755 foo/bar/baz

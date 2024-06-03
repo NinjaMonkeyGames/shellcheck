@@ -1,0 +1,1 @@
+cp "$file $dir"

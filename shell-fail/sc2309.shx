@@ -1,0 +1,2 @@
+read -p "Continue? [y/n] " var
+[ "$var" -eq "n" ​] && exit 1
