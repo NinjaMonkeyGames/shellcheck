@@ -2,7 +2,7 @@
 
 ## What is this repository for? ##
 
-The purpose of this repository is to maintain control over versions of hadolint. This maintains uniformity-
+The purpose of this repository is to maintain control over versions of shellcheck. This maintains uniformity-
 when enforcing coding standards and formatting rules. This allows for easier upgrades and prevents newer versions from
 breaking the pipeline.
 
@@ -10,17 +10,17 @@ breaking the pipeline.
 
 ## Configuration information ##
 
-There is a '.hadolint.yaml' file containing the haolint configuration in the root of the project directory. You can
+There is a '.shellcheckrc' file containing the shellcheck configuration in the root of the project directory. You can
 use the following YAML line to copy this into your project directory.
 
 ```shell
-cp /app/.hadolint.yaml $GITHUB_WORKSPACE
+cp /app/.shellcheckrc $GITHUB_WORKSPACE
 ```
 
 Alternately you can use the following command to use your own configuration file.
 
 ```shell
-find . \( -iname "dockerfile" or -name "*.dockerfile" \) -exec hadolint {} + -c .hadolint.yaml
+run: find . -name "*.sh" -exec shellcheck --source-path=SOURCEPATHS .shellcheckrc --color {} +
 ```
 
 See links below for more information about Hadolint and Alpine Linux.
@@ -33,7 +33,7 @@ See links below for more information about Hadolint and Alpine Linux.
   
   * **Project Docker pull address:**  docker pull monkeyknuckles/shellcheck
 
-  * **Project Docker landing page:**  <https://hub.docker.com/r/monkeyknuckles/hadolint>
+  * **Project Docker landing page:**  <https://hub.docker.com/r/monkeyknuckles/shellcheck>
   * **Project clone address:**        <https://github.com/NinjaMonkeyGames/shellcheck-docker.git>
   * **Project landing page:**         <https://github.com/NinjaMonkeyGames/shellcheck-docker>
   * **Project wiki page:**            <https://github.com/NinjaMonkeyGames/shellcheck-docker/wiki>
@@ -52,8 +52,8 @@ See links below for more information about Hadolint and Alpine Linux.
 ## Includes ##
 
 * Alpine Linux        v3.20.0
-* CURL                v8.7.0-r0
-* Hadolint            v2.12.0
+* CURL                v8.7.1-r0
+* Shellcheck          v0.10.0
 
 ---
 
@@ -80,6 +80,7 @@ This project uses a sequential versioning system.
 |----------------|-----------------------------------------------------------------------------------------------------|
 | 0.0.0.0        | Base files included.                                                                                |
 | 0.0.0.1        | Updated 'READEME.md' to align with the layout of the other linter projects.                         |
+| 0.0.0.2        | Updated 'README.md'. Removed unnecessary                       |
 
 ---
 

@@ -1,10 +1,8 @@
 # IF ANY CHANGES ARE MADE TO THIS FILE THE DOCKER CONTAINER ON DOCKERHUB MUST ALSO BE UPDATED WITH THE NEW BUILD!
 
 # USE ALPINE LINUX O/S AS BASE IMAGE
-FROM alpine:3.20.0
 
-# INSTALL NODE.JS
-RUN apk add --no-cache nodejs=20.13.1-r0 npm=10.8.0-r0
+FROM alpine:3.20.0
 
 # DOWNLOAD, EXTRACT AND INSTALL SHELLCHECK
 
@@ -15,7 +13,10 @@ RUN apk add --no-cache curl=8.7.1-r0 && \
     chmod +x /usr/bin/shellcheck && \
     rm -rf shellcheck.tar.xz shellcheck-v0.10.0
 
+# SET WORKING DIRECTORY
+
 WORKDIR /app
 
 # INCLUDE '.shellcheckrc' IN DOCKER BUILD
+
 COPY .shellcheckrc ./.shellcheckrc

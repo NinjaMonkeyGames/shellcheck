@@ -17,6 +17,10 @@ jobs:                                                           # Initialise job
         run: cp /app/.shellcheckrc $GITHUB_WORKSPACE            # Copy the .shellcheckrc file from the container to the workspace
 
       - name: Run ShellCheck                                    # Step name: Run ShellCheck
-        run: find . -name "*.sh" -exec shellcheck --color {} +  # Execute the shellcheck command on all shell script files in the repository
+        run: |                                                  # Find and lint all shell files
+             find . -name "*.sh" -exec \
+             shellcheck --source-path=SOURCEPATHS \
+             .shellcheckrc --color {} +
+             
              
       
