@@ -2,7 +2,7 @@
 
 ## What is this repository for? ##
 
-The purpose of this repository is to maintain control over versions of shellcheck. This maintains uniformity-
+The purpose of this repository is to maintain control over versions of ShellCheck. This maintains uniformity-
 when enforcing coding standards and formatting rules. This allows for easier upgrades and prevents newer versions from
 breaking the pipeline.
 
@@ -10,7 +10,7 @@ breaking the pipeline.
 
 ## Configuration information ##
 
-There is a '.shellcheckrc' file containing the shellcheck configuration in the root of the project directory. You can
+There is a '.shellcheckrc' file containing the ShellCheck configuration in the root of the project directory. You can
 use the following YAML line to copy this into your project directory.
 
 ```shell
@@ -44,7 +44,7 @@ See links below for more information about Hadolint and Alpine Linux.
 
   * **Alpine source landing page:**   <https://hub.docker.com/_/alpine>
   * **Shellcheck website:**           <https://www.shellcheck.net/>
-  * **Shellcheck:**                   <https://github.com/koalaman/shellcheck/tree/v0.10.0>
+  * **GitHub Shellcheck:**            <https://github.com/koalaman/shellcheck/tree/v0.10.0>
   * **VSC Plugin:**                   <https://github.com/koalaman/shellcheck>
 
 ---
@@ -53,7 +53,7 @@ See links below for more information about Hadolint and Alpine Linux.
 
 * Alpine Linux        v3.20.0
 * CURL                v8.7.1-r0
-* Shellcheck          v0.10.0
+* ShellCheck          v0.10.0
 
 ---
 
@@ -61,8 +61,9 @@ See links below for more information about Hadolint and Alpine Linux.
 
 | File Or Folder Name:                  | Files | Description Of File Or Folder Contents                               |
 |---------------------------------------|-------|----------------------------------------------------------------------|
-| > shell-fail                          |   49  | Contains examples of every possible docker error.                    |
-| .shellcheckrc                         |   1   | Contains dockerfile rule configuration.                              |
+| > shell-fail                          |   49  | Contains examples of every possible shellscript error.               |
+| .shellcheckrc                         |   1   | Contains ShellCheck rule configuration.                              |
+| > .git                                |  530  | Contains git configuration files.                                    |
 | > .github > workflows > pipeline.yml  |   1   | Lints all docker files in docker.                                    |
 | dockerfile                            |   1   | Information on how to build docker.                                  |
 | README.md                             |   1   | Contains information about the project.                              |
@@ -80,7 +81,8 @@ This project uses a sequential versioning system.
 |----------------|-----------------------------------------------------------------------------------------------------|
 | 0.0.0.0        | Base files included.                                                                                |
 | 0.0.0.1        | Updated 'READEME.md' to align with the layout of the other linter projects.                         |
-| 0.0.0.2        | Updated 'README.md'. Removed unnecessary                       |
+| 0.0.0.2        | Updated 'README.md'.                                                                                |
+| 0.0.0.3        | Internal adjustment to make the project structure consistent across all repositories in the project.|
 
 ---
 

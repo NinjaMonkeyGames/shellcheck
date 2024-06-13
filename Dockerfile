@@ -4,7 +4,7 @@
 
 FROM alpine:3.20.0
 
-# DOWNLOAD, EXTRACT AND INSTALL SHELLCHECK
+# DOWNLOAD, EXTRACT AND INSTALL SHELLCHECK AND DEPENDENCIES 
 
 RUN apk add --no-cache curl=8.7.1-r0 && \
     curl -L "https://github.com/koalaman/shellcheck/releases/download/v0.10.0/shellcheck-v0.10.0.linux.x86_64.tar.xz" -o shellcheck.tar.xz && \
@@ -13,7 +13,7 @@ RUN apk add --no-cache curl=8.7.1-r0 && \
     chmod +x /usr/bin/shellcheck && \
     rm -rf shellcheck.tar.xz shellcheck-v0.10.0
 
-# SET WORKING DIRECTORY
+# SET THE WORKING DIRECTORY FOR THE CONTAINER
 
 WORKDIR /app
 
